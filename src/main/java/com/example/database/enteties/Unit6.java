@@ -13,11 +13,35 @@ public class Unit6 {
     private Long id;
 
     @Column
-    private int hiking;
+    private Integer hiking;
 
     @Column
-    private int excursions;
+    private Integer excursions;
 
     @Column
-    private int inFieldExpeditions;
+    private Integer inFieldExpeditions;
+
+    public Integer getHiking() {
+        return hiking;
+    }
+
+    public void setHiking(Integer hiking) {
+        this.hiking = hiking;
+    }
+
+    public Integer getExcursions() {
+        return excursions;
+    }
+
+    public void setExcursions(Integer excursions) {
+        this.excursions = excursions;
+    }
+
+    public Integer getInFieldExpeditions() {
+        return inFieldExpeditions;
+    }
+
+    public void setInFieldExpeditions(Integer inFieldExpeditions) {
+        this.inFieldExpeditions = inFieldExpeditions;
+    }
 }

@@ -16,24 +16,94 @@ public class Unit4 {
     private Long id;
 
     @Column
-    private int[] technical = new int[17];
+    private Integer[] technical = new Integer[17];
     @Column
-    private int[] naturalScience = new int[17];
+    private Integer[] naturalScience = new Integer[17];
     @Column
-    private int[] tourismAndLocalHistory = new int[17];
+    private Integer[] tourismAndLocalHistory = new Integer[17];
     @Column
-    private int[] socialAndHumanitarian = new int[17];
+    private Integer[] socialAndHumanitarian = new Integer[17];
     @Column
-    private int[] artisticOrientation = new int[17];
+    private Integer[] artisticOrientation = new Integer[17];
     @Column
-    private int[] physicalEducationAndSports = new int[17];
+    private Integer[] physicalEducationAndSports = new Integer[17];
 
     @Column
-    private int[] preprofessionalProgramsInTheFieldOfArts = new int[17];
+    private Integer[] preprofessionalProgramsInTheFieldOfArts = new Integer[17];
     @Column
-    private int[] additionalEducationalProgramsSportsTraining = new int[17];
+    private Integer[] additionalEducationalProgramsSportsTraining = new Integer[17];
     @Column
-    private int[] numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms = new int[17];
+    private Integer[] numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms = new Integer[17];
 
+    public Integer[] getTechnical() {
+        return technical;
+    }
 
+    public void setTechnical(Integer[] technical) {
+        this.technical = technical;
+    }
+
+    public Integer[] getNaturalScience() {
+        return naturalScience;
+    }
+
+    public void setNaturalScience(Integer[] naturalScience) {
+        this.naturalScience = naturalScience;
+    }
+
+    public Integer[] getTourismAndLocalHistory() {
+        return tourismAndLocalHistory;
+    }
+
+    public void setTourismAndLocalHistory(Integer[] tourismAndLocalHistory) {
+        this.tourismAndLocalHistory = tourismAndLocalHistory;
+    }
+
+    public Integer[] getSocialAndHumanitarian() {
+        return socialAndHumanitarian;
+    }
+
+    public void setSocialAndHumanitarian(Integer[] socialAndHumanitarian) {
+        this.socialAndHumanitarian = socialAndHumanitarian;
+    }
+
+    public Integer[] getArtisticOrientation() {
+        return artisticOrientation;
+    }
+
+    public void setArtisticOrientation(Integer[] artisticOrientation) {
+        this.artisticOrientation = artisticOrientation;
+    }
+
+    public Integer[] getPhysicalEducationAndSports() {
+        return physicalEducationAndSports;
+    }
+
+    public void setPhysicalEducationAndSports(Integer[] physicalEducationAndSports) {
+        this.physicalEducationAndSports = physicalEducationAndSports;
+    }
+
+    public Integer[] getPreprofessionalProgramsInTheFieldOfArts() {
+        return preprofessionalProgramsInTheFieldOfArts;
+    }
+
+    public void setPreprofessionalProgramsInTheFieldOfArts(Integer[] preprofessionalProgramsInTheFieldOfArts) {
+        this.preprofessionalProgramsInTheFieldOfArts = preprofessionalProgramsInTheFieldOfArts;
+    }
+
+    public Integer[] getAdditionalEducationalProgramsSportsTraining() {
+        return additionalEducationalProgramsSportsTraining;
+    }
+
+    public void setAdditionalEducationalProgramsSportsTraining(Integer[] additionalEducationalProgramsSportsTraining) {
+        this.additionalEducationalProgramsSportsTraining = additionalEducationalProgramsSportsTraining;
+    }
+
+    public Integer[] getNumberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms() {
+        return numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms;
+    }
+
+    public void setNumberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms(Integer[] numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms) {
+        this.numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms = numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms;
+    }
 }

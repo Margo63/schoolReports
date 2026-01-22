@@ -12,14 +12,46 @@ public class Unit14 {
     private Long id;
 
     @Column
-    private int maximumInternetAccessSpeed;
+    private Integer maximumInternetAccessSpeed;
 
     @Column
-    private int maximumSpeedOfFixedWiredInternetAccess;
+    private Integer maximumSpeedOfFixedWiredInternetAccess;
 
     @Column
-    private int maximumSpeedOfFixedWirelessInternetAccess;
+    private Integer maximumSpeedOfFixedWirelessInternetAccess;
 
     @Column
-    private int maximumSpeedOfMobileInternetAccess;
+    private Integer maximumSpeedOfMobileInternetAccess;
+
+    public Integer getMaximumInternetAccessSpeed() {
+        return maximumInternetAccessSpeed;
+    }
+
+    public void setMaximumInternetAccessSpeed(Integer maximumInternetAccessSpeed) {
+        this.maximumInternetAccessSpeed = maximumInternetAccessSpeed;
+    }
+
+    public Integer getMaximumSpeedOfFixedWiredInternetAccess() {
+        return maximumSpeedOfFixedWiredInternetAccess;
+    }
+
+    public void setMaximumSpeedOfFixedWiredInternetAccess(Integer maximumSpeedOfFixedWiredInternetAccess) {
+        this.maximumSpeedOfFixedWiredInternetAccess = maximumSpeedOfFixedWiredInternetAccess;
+    }
+
+    public Integer getMaximumSpeedOfFixedWirelessInternetAccess() {
+        return maximumSpeedOfFixedWirelessInternetAccess;
+    }
+
+    public void setMaximumSpeedOfFixedWirelessInternetAccess(Integer maximumSpeedOfFixedWirelessInternetAccess) {
+        this.maximumSpeedOfFixedWirelessInternetAccess = maximumSpeedOfFixedWirelessInternetAccess;
+    }
+
+    public Integer getMaximumSpeedOfMobileInternetAccess() {
+        return maximumSpeedOfMobileInternetAccess;
+    }
+
+    public void setMaximumSpeedOfMobileInternetAccess(Integer maximumSpeedOfMobileInternetAccess) {
+        this.maximumSpeedOfMobileInternetAccess = maximumSpeedOfMobileInternetAccess;
+    }
 }

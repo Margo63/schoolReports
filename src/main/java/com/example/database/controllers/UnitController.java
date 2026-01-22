@@ -16,7 +16,7 @@ public class UnitController {
 
     @PostMapping("addUnit7")
     String addUnit(@RequestBody Unit7 unit7){
-        System.out.println(Arrays.toString(unit7.getBranchManager()));
+        //System.out.println(Arrays.toString(unit7.getBranchManager()));
         unit7Repository.save(unit7);
         return "success";
     }

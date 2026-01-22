@@ -14,16 +14,47 @@ public class Unit13 {
     private Long id;
 
     @Column
-    private int availabilityOfFixedTelephoneService;
+    private Integer availabilityOfFixedTelephoneService;
 
     @Column
-    private int emailAddress;
+    private Integer emailAddress;
 
     @Column
-    private int websiteOnTheInternet;
+    private Integer websiteOnTheInternet;
 
     @Column
-    private int availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    private Integer availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
 
 
+    public Integer getAvailabilityOfFixedTelephoneService() {
+        return availabilityOfFixedTelephoneService;
+    }
+
+    public void setAvailabilityOfFixedTelephoneService(Integer availabilityOfFixedTelephoneService) {
+        this.availabilityOfFixedTelephoneService = availabilityOfFixedTelephoneService;
+    }
+
+    public Integer getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(Integer emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public Integer getWebsiteOnTheInternet() {
+        return websiteOnTheInternet;
+    }
+
+    public void setWebsiteOnTheInternet(Integer websiteOnTheInternet) {
+        this.websiteOnTheInternet = websiteOnTheInternet;
+    }
+
+    public Integer getAvailabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities() {
+        return availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    }
+
+    public void setAvailabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities(Integer availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities) {
+        this.availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities = availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    }
 }

@@ -13,20 +13,68 @@ public class Unit11 {
     private Long id;
 
     @Column
-    private int[] totalAreaOfBuildingsTotal = new int[6];
+    private Integer[] totalAreaOfBuildingsTotal = new Integer[6];
 
     @Column
-    private int[] theAreaOfThePremisesForTheImplementationOfEducationalActivities = new int[6];
+    private Integer[] theAreaOfThePremisesForTheImplementationOfEducationalActivities = new Integer[6];
 
     @Column
-    private int[] theAreaOfThePremisesForStudentsLeisureActivities = new int[6];
+    private Integer[] theAreaOfThePremisesForStudentsLeisureActivities = new Integer[6];
 
     @Column
-    private int[] totalLandArea = new int[6];
+    private Integer[] totalLandArea = new Integer[6];
 
     @Column
-    private int[] theAreaOfTheSportsGround = new int[6];
+    private Integer[] theAreaOfTheSportsGround = new Integer[6];
 
     @Column
-    private int[] theAreaOfTheTrainingAndExperimentalSite = new int[6];
+    private Integer[] theAreaOfTheTrainingAndExperimentalSite = new Integer[6];
+
+    public Integer[] getTotalAreaOfBuildingsTotal() {
+        return totalAreaOfBuildingsTotal;
+    }
+
+    public void setTotalAreaOfBuildingsTotal(Integer[] totalAreaOfBuildingsTotal) {
+        this.totalAreaOfBuildingsTotal = totalAreaOfBuildingsTotal;
+    }
+
+    public Integer[] getTheAreaOfThePremisesForTheImplementationOfEducationalActivities() {
+        return theAreaOfThePremisesForTheImplementationOfEducationalActivities;
+    }
+
+    public void setTheAreaOfThePremisesForTheImplementationOfEducationalActivities(Integer[] theAreaOfThePremisesForTheImplementationOfEducationalActivities) {
+        this.theAreaOfThePremisesForTheImplementationOfEducationalActivities = theAreaOfThePremisesForTheImplementationOfEducationalActivities;
+    }
+
+    public Integer[] getTheAreaOfThePremisesForStudentsLeisureActivities() {
+        return theAreaOfThePremisesForStudentsLeisureActivities;
+    }
+
+    public void setTheAreaOfThePremisesForStudentsLeisureActivities(Integer[] theAreaOfThePremisesForStudentsLeisureActivities) {
+        this.theAreaOfThePremisesForStudentsLeisureActivities = theAreaOfThePremisesForStudentsLeisureActivities;
+    }
+
+    public Integer[] getTotalLandArea() {
+        return totalLandArea;
+    }
+
+    public void setTotalLandArea(Integer[] totalLandArea) {
+        this.totalLandArea = totalLandArea;
+    }
+
+    public Integer[] getTheAreaOfTheSportsGround() {
+        return theAreaOfTheSportsGround;
+    }
+
+    public void setTheAreaOfTheSportsGround(Integer[] theAreaOfTheSportsGround) {
+        this.theAreaOfTheSportsGround = theAreaOfTheSportsGround;
+    }
+
+    public Integer[] getTheAreaOfTheTrainingAndExperimentalSite() {
+        return theAreaOfTheTrainingAndExperimentalSite;
+    }
+
+    public void setTheAreaOfTheTrainingAndExperimentalSite(Integer[] theAreaOfTheTrainingAndExperimentalSite) {
+        this.theAreaOfTheTrainingAndExperimentalSite = theAreaOfTheTrainingAndExperimentalSite;
+    }
 }

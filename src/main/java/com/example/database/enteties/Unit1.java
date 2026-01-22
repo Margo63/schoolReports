@@ -13,8 +13,24 @@ public class Unit1 {
     private Long id;
 
     @Column
-    private int organization_type;
+    private Integer organizationType;
 
     @Column
-    private int terrain_type;
+    private Integer terrainType;
+
+    public Integer getOrganizationType() {
+        return organizationType;
+    }
+
+    public void setOrganizationType(Integer organizationType) {
+        this.organizationType = organizationType;
+    }
+
+    public Integer getTerrainType() {
+        return terrainType;
+    }
+
+    public void setTerrainType(Integer terrainType) {
+        this.terrainType = terrainType;
+    }
 }

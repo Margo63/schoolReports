@@ -13,21 +13,85 @@ public class Unit5 {
     private Long id;
 
     @Column
-    private int[] technical = new int[5];
+    private Integer[] technical = new Integer[5];
     @Column
-    private int[] naturalScience = new int[5];
+    private Integer[] naturalScience = new Integer[5];
 
     @Column
-    private int[] tourismAndLocalHistory = new int[5];
+    private Integer[] tourismAndLocalHistory = new Integer[5];
     @Column
-    private int[] socialAndHumanitarian = new int[5];
+    private Integer[] socialAndHumanitarian = new Integer[5];
     @Column
-    private int[] artisticOrientation = new int[5];
+    private Integer[] artisticOrientation = new Integer[5];
     @Column
-    private int[] physicalEducationAndSports = new int[5];
+    private Integer[] physicalEducationAndSports = new Integer[5];
 
     @Column
-    private int[] preprofessionalProgramsInTheFieldOfArts = new int[5];
+    private Integer[] preprofessionalProgramsIntegerheFieldOfArts = new Integer[5];
     @Column
-    private int[] additionalEducationalProgramsSportsTraining = new int[5];
+    private Integer[] additionalEducationalProgramsSportsTraining = new Integer[5];
+
+    public Integer[] getTechnical() {
+        return technical;
+    }
+
+    public void setTechnical(Integer[] technical) {
+        this.technical = technical;
+    }
+
+    public Integer[] getNaturalScience() {
+        return naturalScience;
+    }
+
+    public void setNaturalScience(Integer[] naturalScience) {
+        this.naturalScience = naturalScience;
+    }
+
+    public Integer[] getTourismAndLocalHistory() {
+        return tourismAndLocalHistory;
+    }
+
+    public void setTourismAndLocalHistory(Integer[] tourismAndLocalHistory) {
+        this.tourismAndLocalHistory = tourismAndLocalHistory;
+    }
+
+    public Integer[] getSocialAndHumanitarian() {
+        return socialAndHumanitarian;
+    }
+
+    public void setSocialAndHumanitarian(Integer[] socialAndHumanitarian) {
+        this.socialAndHumanitarian = socialAndHumanitarian;
+    }
+
+    public Integer[] getArtisticOrientation() {
+        return artisticOrientation;
+    }
+
+    public void setArtisticOrientation(Integer[] artisticOrientation) {
+        this.artisticOrientation = artisticOrientation;
+    }
+
+    public Integer[] getPhysicalEducationAndSports() {
+        return physicalEducationAndSports;
+    }
+
+    public void setPhysicalEducationAndSports(Integer[] physicalEducationAndSports) {
+        this.physicalEducationAndSports = physicalEducationAndSports;
+    }
+
+    public Integer[] getPreprofessionalProgramsIntegerheFieldOfArts() {
+        return preprofessionalProgramsIntegerheFieldOfArts;
+    }
+
+    public void setPreprofessionalProgramsIntegerheFieldOfArts(Integer[] preprofessionalProgramsIntegerheFieldOfArts) {
+        this.preprofessionalProgramsIntegerheFieldOfArts = preprofessionalProgramsIntegerheFieldOfArts;
+    }
+
+    public Integer[] getAdditionalEducationalProgramsSportsTraining() {
+        return additionalEducationalProgramsSportsTraining;
+    }
+
+    public void setAdditionalEducationalProgramsSportsTraining(Integer[] additionalEducationalProgramsSportsTraining) {
+        this.additionalEducationalProgramsSportsTraining = additionalEducationalProgramsSportsTraining;
+    }
 }
