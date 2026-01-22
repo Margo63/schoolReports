@@ -13,18 +13,28 @@ public class Unit2 {
     private Long id;
 
     @Column
-    private Integer participatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation;
+    private Integer personalizedFinancingOfChildrensAdditionalEducation;
     @Column
     private Integer newWageSystem;
     @Column
     private Integer theEducationalActivityLicense;
 
-    public Integer getParticipatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation() {
-        return participatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation;
+    public Unit2() {
     }
 
-    public void setParticipatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation(Integer participatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation) {
-        this.participatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation = participatesInTheMechanismOfPersonalizedFinancingOfChildrensAdditionalEducation;
+    public Unit2(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public Integer getPersonalizedFinancingOfChildrensAdditionalEducation() {
+        return personalizedFinancingOfChildrensAdditionalEducation;
+    }
+
+    public void setPersonalizedFinancingOfChildrensAdditionalEducation(Integer personalizedFinancingOfChildrensAdditionalEducation) {
+        this.personalizedFinancingOfChildrensAdditionalEducation = personalizedFinancingOfChildrensAdditionalEducation;
     }
 
     public Integer getNewWageSystem() {

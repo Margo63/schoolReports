@@ -1,4 +1,7 @@
 package com.example.database.repositories;
 
-public class Unit5Repository {
+import com.example.database.enteties.Unit5;
+import org.springframework.data.repository.CrudRepository;
+
+public interface Unit5Repository extends CrudRepository<Unit5, Long> {
 }

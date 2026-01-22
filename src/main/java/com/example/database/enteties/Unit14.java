@@ -23,6 +23,16 @@ public class Unit14 {
     @Column
     private Integer maximumSpeedOfMobileInternetAccess;
 
+    public Unit14() {
+    }
+
+    public Unit14(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getMaximumInternetAccessSpeed() {
         return maximumInternetAccessSpeed;
     }

@@ -36,6 +36,16 @@ public class Unit8 {
     @Column
     private Integer[] otherStaff = new Integer[11];
 
+    public Unit8() {
+    }
+
+    public Unit8(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getTheNumberOfEmployeesIsTotal() {
         return theNumberOfEmployeesIsTotal;
     }

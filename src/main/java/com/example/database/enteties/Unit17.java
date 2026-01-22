@@ -21,6 +21,16 @@ public class Unit17 {
     @Column
     private Integer securityProductsServices;
 
+    public Unit17() {
+    }
+
+    public Unit17(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getTotalDigitalTechCostsTotal() {
         return totalDigitalTechCostsTotal;
     }

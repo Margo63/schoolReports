@@ -18,6 +18,16 @@ public class Unit9 {
     @Column
     private Integer[] partOfTheBuilding = new Integer[13];
 
+    public Unit9() {
+    }
+
+    public Unit9(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getOrganizationBuildings() {
         return organizationBuildings;
     }

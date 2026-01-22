@@ -1,4 +1,7 @@
 package com.example.database.repositories;
 
-public interface ContactInfoRepository {
+import com.example.database.enteties.ContactInformation;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ContactInfoRepository extends CrudRepository<ContactInformation, Long> {
 }

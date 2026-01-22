@@ -31,6 +31,17 @@ public class ContactInformation {
     @Column(length = 2)
     private String documentYear;
 
+    public ContactInformation() {
+    }
+
+    public ContactInformation(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getPosition() {
         return position;
     }

@@ -44,6 +44,16 @@ public class Unit15 {
     @Column
     private Integer balanceEnd;
 
+    public Unit15() {
+    }
+
+    public Unit15(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getTheAmountOfFundsReceived() {
         return theAmountOfFundsReceived;
     }

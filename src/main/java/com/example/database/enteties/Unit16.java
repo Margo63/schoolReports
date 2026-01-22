@@ -47,6 +47,16 @@ public class Unit16 {
     @Column
     private Integer receiptOfNonFinancialAssetsBudget;
 
+    public Unit16() {
+    }
+
+    public Unit16(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getTotalExpensesTotal() {
         return totalExpensesTotal;
     }

@@ -31,6 +31,16 @@ public class Unit5 {
     @Column
     private Integer[] additionalEducationalProgramsSportsTraining = new Integer[5];
 
+    public Unit5() {
+    }
+
+    public Unit5(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getTechnical() {
         return technical;
     }

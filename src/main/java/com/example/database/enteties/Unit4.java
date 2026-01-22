@@ -6,8 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import java.util.List;
-
 @Entity
 @Table(name = "unit4")
 public class Unit4 {
@@ -33,8 +31,18 @@ public class Unit4 {
     @Column
     private Integer[] additionalEducationalProgramsSportsTraining = new Integer[17];
     @Column
-    private Integer[] numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms = new Integer[17];
+    private Integer[] numberOfStudentsAdditionalGeneralEducationPrograms = new Integer[17];
 
+    public Unit4() {
+    }
+
+    public Unit4(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getTechnical() {
         return technical;
     }
@@ -99,11 +107,11 @@ public class Unit4 {
         this.additionalEducationalProgramsSportsTraining = additionalEducationalProgramsSportsTraining;
     }
 
-    public Integer[] getNumberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms() {
-        return numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms;
+    public Integer[] getNumberOfStudentsAdditionalGeneralEducationPrograms() {
+        return numberOfStudentsAdditionalGeneralEducationPrograms;
     }
 
-    public void setNumberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms(Integer[] numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms) {
-        this.numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms = numberOfStudentsInTheOrganizationOfAdditionalGeneralEducationPrograms;
+    public void setNumberOfStudentsAdditionalGeneralEducationPrograms(Integer[] numberOfStudentsAdditionalGeneralEducationPrograms) {
+        this.numberOfStudentsAdditionalGeneralEducationPrograms = numberOfStudentsAdditionalGeneralEducationPrograms;
     }
 }

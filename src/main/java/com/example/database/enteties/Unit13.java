@@ -23,9 +23,18 @@ public class Unit13 {
     private Integer websiteOnTheInternet;
 
     @Column
-    private Integer availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    private Integer availabilityOfInformationOnTheWebsiteAboutOrganization;
 
+    public Unit13() {
+    }
 
+    public Unit13(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getAvailabilityOfFixedTelephoneService() {
         return availabilityOfFixedTelephoneService;
     }
@@ -50,11 +59,11 @@ public class Unit13 {
         this.websiteOnTheInternet = websiteOnTheInternet;
     }
 
-    public Integer getAvailabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities() {
-        return availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    public Integer getAvailabilityOfInformationOnTheWebsiteAboutOrganization() {
+        return availabilityOfInformationOnTheWebsiteAboutOrganization;
     }
 
-    public void setAvailabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities(Integer availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities) {
-        this.availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities = availabilityOfInformationOnTheWebsiteOnALegallyFixedListOfInformationAboutOrganizationsActivities;
+    public void setAvailabilityOfInformationOnTheWebsiteAboutOrganization(Integer availabilityOfInformationOnTheWebsiteAboutOrganization) {
+        this.availabilityOfInformationOnTheWebsiteAboutOrganization = availabilityOfInformationOnTheWebsiteAboutOrganization;
     }
 }

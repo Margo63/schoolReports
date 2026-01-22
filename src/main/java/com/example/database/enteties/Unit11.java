@@ -16,7 +16,7 @@ public class Unit11 {
     private Integer[] totalAreaOfBuildingsTotal = new Integer[6];
 
     @Column
-    private Integer[] theAreaOfThePremisesForTheImplementationOfEducationalActivities = new Integer[6];
+    private Integer[] theAreaForEducationalActivities = new Integer[6];
 
     @Column
     private Integer[] theAreaOfThePremisesForStudentsLeisureActivities = new Integer[6];
@@ -30,6 +30,16 @@ public class Unit11 {
     @Column
     private Integer[] theAreaOfTheTrainingAndExperimentalSite = new Integer[6];
 
+    public Unit11() {
+    }
+
+    public Unit11(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getTotalAreaOfBuildingsTotal() {
         return totalAreaOfBuildingsTotal;
     }
@@ -38,12 +48,12 @@ public class Unit11 {
         this.totalAreaOfBuildingsTotal = totalAreaOfBuildingsTotal;
     }
 
-    public Integer[] getTheAreaOfThePremisesForTheImplementationOfEducationalActivities() {
-        return theAreaOfThePremisesForTheImplementationOfEducationalActivities;
+    public Integer[] getTheAreaForEducationalActivities() {
+        return theAreaForEducationalActivities;
     }
 
-    public void setTheAreaOfThePremisesForTheImplementationOfEducationalActivities(Integer[] theAreaOfThePremisesForTheImplementationOfEducationalActivities) {
-        this.theAreaOfThePremisesForTheImplementationOfEducationalActivities = theAreaOfThePremisesForTheImplementationOfEducationalActivities;
+    public void setTheAreaForEducationalActivities(Integer[] theAreaForEducationalActivities) {
+        this.theAreaForEducationalActivities = theAreaForEducationalActivities;
     }
 
     public Integer[] getTheAreaOfThePremisesForStudentsLeisureActivities() {

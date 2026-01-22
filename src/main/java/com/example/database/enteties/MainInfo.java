@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.sql.Date;
 
+
 @Entity
 @Table(name = "main_info")
 public class MainInfo {
@@ -34,6 +35,11 @@ public class MainInfo {
 
     @Column(length = 50)
     private String changeNumber2;
+
+    public Long getId() {
+        return id;
+    }
+
 
     public String getOrganizationName() {
         return organizationName;

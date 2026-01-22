@@ -56,6 +56,16 @@ public class Unit12 {
     @Column
     private Integer multifunctionDevices;
 
+    public Unit12() {
+    }
+
+    public Unit12(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer[] getPersonalComputersTotal() {
         return personalComputersTotal;
     }

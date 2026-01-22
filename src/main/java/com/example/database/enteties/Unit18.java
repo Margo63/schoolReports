@@ -20,6 +20,17 @@ public class Unit18 {
     @Column
     private Integer otherAttractedFunds;
 
+    public Unit18() {
+    }
+
+    public Unit18(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Integer getInternalDigitalTechCostsTotal() {
         return internalDigitalTechCostsTotal;
     }

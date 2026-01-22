@@ -18,6 +18,17 @@ public class Unit1 {
     @Column
     private Integer terrainType;
 
+
+    public Unit1() {
+    }
+
+    public Unit1(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getOrganizationType() {
         return organizationType;
     }

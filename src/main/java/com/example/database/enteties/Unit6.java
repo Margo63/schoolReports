@@ -21,6 +21,16 @@ public class Unit6 {
     @Column
     private Integer inFieldExpeditions;
 
+    public Unit6() {
+    }
+
+    public Unit6(Long id) {
+        this.id = id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Integer getHiking() {
         return hiking;
     }

@@ -36,6 +36,16 @@ public class Unit7 {
     @Column
     private Integer[] professionalDevelopment = new Integer[11];
 
+    public Unit7() {
+    }
+
+    public Unit7(Long id) {
+        this.id = id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Integer[] getTheNumberOfEmployeesIsTotal() {
         return theNumberOfEmployeesIsTotal;
     }

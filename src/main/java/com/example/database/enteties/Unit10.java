@@ -132,6 +132,16 @@ public class Unit10 {
     @Column
     private Integer libraryThirdPartyOrganization;
 
+    public Unit10() {
+    }
+
+    public Unit10(Long id) {
+        this.id = id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Integer getAssemblyHallInOrganization() {
         return assemblyHallInOrganization;
     }
