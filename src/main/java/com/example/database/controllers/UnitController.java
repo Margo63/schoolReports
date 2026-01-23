@@ -323,7 +323,7 @@ public class UnitController {
         return ResponseEntity.ok("Updated");
     }
 
-    @PutMapping("updateUnit21")
+    @PutMapping("updateUnit12")
     ResponseEntity<String> updateUnit12(@RequestBody Unit12 unit12) {
 
         unit12Repository.save(unit12);
@@ -344,14 +344,14 @@ public class UnitController {
     }
 
     @PutMapping("updateUnit15")
-    ResponseEntity<String> updateUnit5(@RequestBody Unit15 unit15) {
+    ResponseEntity<String> updateUnit15(@RequestBody Unit15 unit15) {
 
         unit15Repository.save(unit15);
         return ResponseEntity.ok("Updated");
     }
 
     @PutMapping("updateUnit16")
-    ResponseEntity<String> updateUnit6(@RequestBody Unit16 unit16) {
+    ResponseEntity<String> updateUnit16(@RequestBody Unit16 unit16) {
 
         unit16Repository.save(unit16);
         return ResponseEntity.ok("Updated");
