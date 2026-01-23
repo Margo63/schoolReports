@@ -27,7 +27,7 @@ public class Unit5 {
     private Integer[] physicalEducationAndSports = new Integer[5];
 
     @Column
-    private Integer[] preprofessionalProgramsIntegerheFieldOfArts = new Integer[5];
+    private Integer[] preprofessionalProgramsInTheFieldOfArts = new Integer[5];
     @Column
     private Integer[] additionalEducationalProgramsSportsTraining = new Integer[5];
 
@@ -89,12 +89,12 @@ public class Unit5 {
         this.physicalEducationAndSports = physicalEducationAndSports;
     }
 
-    public Integer[] getPreprofessionalProgramsIntegerheFieldOfArts() {
-        return preprofessionalProgramsIntegerheFieldOfArts;
+    public Integer[] getPreprofessionalProgramsInTheFieldOfArts() {
+        return preprofessionalProgramsInTheFieldOfArts;
     }
 
-    public void setPreprofessionalProgramsIntegerheFieldOfArts(Integer[] preprofessionalProgramsIntegerheFieldOfArts) {
-        this.preprofessionalProgramsIntegerheFieldOfArts = preprofessionalProgramsIntegerheFieldOfArts;
+    public void setPreprofessionalProgramsInTheFieldOfArts(Integer[] preprofessionalProgramsInTheFieldOfArts) {
+        this.preprofessionalProgramsInTheFieldOfArts = preprofessionalProgramsInTheFieldOfArts;
     }
 
     public Integer[] getAdditionalEducationalProgramsSportsTraining() {

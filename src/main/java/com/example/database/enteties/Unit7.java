@@ -34,7 +34,7 @@ public class Unit7 {
     private Integer[] otherStaff = new Integer[11];
 
     @Column
-    private Integer[] professionalDevelopment = new Integer[11];
+    private Integer professionalDevelopment;
 
     public Unit7() {
     }
@@ -118,11 +118,11 @@ public class Unit7 {
         this.otherStaff = otherStaff;
     }
 
-    public Integer[] getProfessionalDevelopment() {
+    public Integer getProfessionalDevelopment() {
         return professionalDevelopment;
     }
 
-    public void setProfessionalDevelopment(Integer[] professionalDevelopment) {
+    public void setProfessionalDevelopment(Integer professionalDevelopment) {
         this.professionalDevelopment = professionalDevelopment;
     }
 }

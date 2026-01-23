@@ -19,5 +19,5 @@ public interface Unit1Repository extends CrudRepository<Unit1, Long> {
                     """,
             nativeQuery = true
     )
-    Unit1Response countByOrganizationName(@Param("organizationName") String organizationName);
+    Unit1Response sumAllByOrganizationName(@Param("organizationName") String organizationName);
 }

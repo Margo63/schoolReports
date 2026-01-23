@@ -1,9 +1,8 @@
 package com.example.database.service;
 
-import com.example.database.dto.Unit3Response;
+import com.example.database.dto.Unit3And5Response;
 import com.example.database.enteties.Unit3;
 import com.example.database.repositories.Unit3Repository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -25,10 +24,10 @@ public class Unit3Service {
     public Unit3 findById(Long id) {
         return unit3Repository.findById(id).get();
     }
-    public Unit3Response getSummary(String organizationName) {
+    public Unit3And5Response sumAllByOrganizationName(String organizationName) {
         List<Unit3> units = unit3Repository.findByOrganizationName(organizationName);
 
-        return new Unit3Response(
+        return new Unit3And5Response(
                 sumArrays(units, Unit3::getTechnical),
                 sumArrays(units, Unit3::getNaturalScience),
                 sumArrays(units, Unit3::getTourismAndLocalHistory),

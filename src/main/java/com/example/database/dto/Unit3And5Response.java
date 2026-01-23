@@ -1,6 +1,6 @@
 package com.example.database.dto;
 
-public class Unit3Response {
+public class Unit3And5Response {
     private Long[] technical;
     private Long[] naturalScience;
     private Long[] tourismAndLocalHistory;
@@ -10,7 +10,7 @@ public class Unit3Response {
     private Long[] preprofessionalProgramsInTheFieldOfArts;
     private Long[] additionalEducationalProgramsSportsTraining;
 
-    public Unit3Response(Long[] technical, Long[] naturalScience, Long[] tourismAndLocalHistory, Long[] socialAndHumanitarian, Long[] artisticOrientation, Long[] physicalEducationAndSports, Long[] preprofessionalProgramsInTheFieldOfArts, Long[] additionalEducationalProgramsSportsTraining) {
+    public Unit3And5Response(Long[] technical, Long[] naturalScience, Long[] tourismAndLocalHistory, Long[] socialAndHumanitarian, Long[] artisticOrientation, Long[] physicalEducationAndSports, Long[] preprofessionalProgramsInTheFieldOfArts, Long[] additionalEducationalProgramsSportsTraining) {
         this.technical = technical;
         this.naturalScience = naturalScience;
         this.tourismAndLocalHistory = tourismAndLocalHistory;

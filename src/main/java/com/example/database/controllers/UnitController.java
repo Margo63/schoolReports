@@ -1,12 +1,10 @@
 package com.example.database.controllers;
 
 
-import com.example.database.dto.ReferenceResponse;
-import com.example.database.dto.Unit1Response;
-import com.example.database.dto.Unit3Response;
+import com.example.database.dto.*;
 import com.example.database.enteties.*;
 import com.example.database.repositories.*;
-import com.example.database.service.Unit3Service;
+import com.example.database.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -34,18 +32,18 @@ public class UnitController {
     Unit3Service unit3Service;
 
     @Autowired
-    Unit4Repository unit4Repository;
+    Unit4Service unit4Service;
 
     @Autowired
-    Unit5Repository unit5Repository;
+    Unit5Service unit5Service;
 
     @Autowired
-    Unit6Repository unit6Repository;
+    Unit6Service unit6Service;
     @Autowired
-    Unit7Repository unit7Repository;
+    Unit7Service unit7Service;
 
     @Autowired
-    Unit8Repository unit8Repository;
+    Unit8Service unit8Service;
 
     @Autowired
     Unit9Repository unit9Repository;
@@ -83,11 +81,11 @@ public class UnitController {
         unit1Repository.save(new Unit1(mainInfo.getId()));
         unit2Repository.save(new Unit2(mainInfo.getId()));
         unit3Service.save(new Unit3(mainInfo.getId()));
-        unit4Repository.save(new Unit4(mainInfo.getId()));
-        unit5Repository.save(new Unit5(mainInfo.getId()));
-        unit6Repository.save(new Unit6(mainInfo.getId()));
-        unit7Repository.save(new Unit7(mainInfo.getId()));
-        unit8Repository.save(new Unit8(mainInfo.getId()));
+        unit4Service.save(new Unit4(mainInfo.getId()));
+        unit5Service.save(new Unit5(mainInfo.getId()));
+        unit6Service.save(new Unit6(mainInfo.getId()));
+        unit7Service.save(new Unit7(mainInfo.getId()));
+        unit8Service.save(new Unit8(mainInfo.getId()));
         unit9Repository.save(new Unit9(mainInfo.getId()));
         unit10Repository.save(new Unit10(mainInfo.getId()));
         unit11Repository.save(new Unit11(mainInfo.getId()));
@@ -103,13 +101,35 @@ public class UnitController {
 
     @GetMapping("getReportUnit1")
     ResponseEntity<Unit1Response> getReportUnit1(@RequestParam String organizationName) {
-        return ResponseEntity.ok(unit1Repository.countByOrganizationName(organizationName));
+        return ResponseEntity.ok(unit1Repository.sumAllByOrganizationName(organizationName));
+    }
+    @GetMapping("getReportUnit3")
+    ResponseEntity<Unit3And5Response> getReportUnit3(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit3Service.sumAllByOrganizationName(organizationName));
     }
 
-    @GetMapping("getReportUnit3")
-    ResponseEntity<Unit3Response> getReportUnit3(@RequestParam String organizationName) {
-        return ResponseEntity.ok(unit3Service.getSummary(organizationName));
+    @GetMapping("getReportUnit4")
+    ResponseEntity<Unit4Response> getReportUnit4(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit4Service.sumAllByOrganizationName(organizationName));
     }
+    @GetMapping("getReportUnit5")
+    ResponseEntity<Unit3And5Response> getReportUnit5(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit5Service.sumAllByOrganizationName(organizationName));
+    }
+    @GetMapping("getReportUnit6")
+    ResponseEntity<Unit6Response> getReportUnit6(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit6Service.sumAllByOrganizationName(organizationName));
+    }
+    @GetMapping("getReportUnit7")
+    ResponseEntity<Unit7Response> getReportUnit7(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit7Service.sumAllByOrganizationName(organizationName));
+    }
+    @GetMapping("getReportUnit8")
+    ResponseEntity<Unit8Response> getReportUnit8(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit8Service.sumAllByOrganizationName(organizationName));
+    }
+
+
 
     @GetMapping("getMainInfoList")
     ResponseEntity<Page<MainInfo>> getMainInfo(@PageableDefault(page = 0, size = 5) Pageable pageable) {
@@ -147,27 +167,27 @@ public class UnitController {
 
     @GetMapping("getUnit4")
     ResponseEntity<Unit4> getUnit4ById(Long id) {
-        return ResponseEntity.ok(unit4Repository.findById(id).get());
+        return ResponseEntity.ok(unit4Service.findById(id));
     }
 
     @GetMapping("getUnit5")
     ResponseEntity<Unit5> getUnit5ById(Long id) {
-        return ResponseEntity.ok(unit5Repository.findById(id).get());
+        return ResponseEntity.ok(unit5Service.findById(id));
     }
 
     @GetMapping("getUnit6")
     ResponseEntity<Unit6> getUnit6ById(Long id) {
-        return ResponseEntity.ok(unit6Repository.findById(id).get());
+        return ResponseEntity.ok(unit6Service.findById(id));
     }
 
     @GetMapping("getUnit7")
     ResponseEntity<Unit7> getUnit7ById(Long id) {
-        return ResponseEntity.ok(unit7Repository.findById(id).get());
+        return ResponseEntity.ok(unit7Service.findById(id));
     }
 
     @GetMapping("getUnit8")
     ResponseEntity<Unit8> getUnit8ById(Long id) {
-        return ResponseEntity.ok(unit8Repository.findById(id).get());
+        return ResponseEntity.ok(unit8Service.findById(id));
     }
 
     @GetMapping("getUnit9")
@@ -254,34 +274,34 @@ public class UnitController {
 
     @PutMapping("updateUnit4")
     ResponseEntity<String> updateUnit4(@RequestBody Unit4 unit4) {
-        unit4Repository.save(unit4);
+        unit4Service.save(unit4);
         return ResponseEntity.ok("Updated");
     }
 
     @PutMapping("updateUnit5")
     ResponseEntity<String> updateUnit5(@RequestBody Unit5 unit5) {
 
-        unit5Repository.save(unit5);
+        unit5Service.save(unit5);
         return ResponseEntity.ok("Updated");
     }
 
     @PutMapping("updateUnit6")
     ResponseEntity<String> updateUnit6(@RequestBody Unit6 unit6) {
 
-        unit6Repository.save(unit6);
+        unit6Service.save(unit6);
         return ResponseEntity.ok("Updated");
     }
 
     @PutMapping("updateUnit7")
     ResponseEntity<String> updateUnit7(@RequestBody Unit7 unit7) {
-        unit7Repository.save(unit7);
+        unit7Service.save(unit7);
         return ResponseEntity.ok("Updated");
     }
 
     @PutMapping("updateUnit8")
     ResponseEntity<String> updateUnit8(@RequestBody Unit8 unit8) {
 
-        unit8Repository.save(unit8);
+        unit8Service.save(unit8);
         return ResponseEntity.ok("Updated");
     }
 
