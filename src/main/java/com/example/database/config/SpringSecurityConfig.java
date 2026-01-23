@@ -51,7 +51,7 @@ public class SpringSecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/user/add").permitAll()
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
-                        .requestMatchers("/api/user/getAllUsers").hasRole("ADMIN")
+                        .requestMatchers("/api/user/getAllUsers").permitAll()//.hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .authenticationProvider(authenticationProvider())

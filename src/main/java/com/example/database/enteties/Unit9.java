@@ -13,10 +13,10 @@ public class Unit9 {
     private Long id;
 
     @Column
-    private Integer[] organizationBuildings = new Integer[13];
+    private String[] organizationBuildings = new String[13];
 
     @Column
-    private Integer[] partOfTheBuilding = new Integer[13];
+    private String[] partOfTheBuilding = new String[13];
 
     public Unit9() {
     }
@@ -28,19 +28,19 @@ public class Unit9 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer[] getOrganizationBuildings() {
+    public String[] getOrganizationBuildings() {
         return organizationBuildings;
     }
 
-    public void setOrganizationBuildings(Integer[] organizationBuildings) {
+    public void setOrganizationBuildings(String[] organizationBuildings) {
         this.organizationBuildings = organizationBuildings;
     }
 
-    public Integer[] getPartOfTheBuilding() {
+    public String[] getPartOfTheBuilding() {
         return partOfTheBuilding;
     }
 
-    public void setPartOfTheBuilding(Integer[] partOfTheBuilding) {
+    public void setPartOfTheBuilding(String[] partOfTheBuilding) {
         this.partOfTheBuilding = partOfTheBuilding;
     }
 }

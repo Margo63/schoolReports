@@ -12,49 +12,49 @@ public class Unit12 {
     private Long id;
 
     @Column
-    private Integer[] personalComputersTotal = new Integer[3];
+    private String[] personalComputersTotal = new String[3];
     @Column
-    private Integer[] portablePersonalComputers = new Integer[3];
+    private String[] portablePersonalComputers = new String[3];
 
     @Column
-    private Integer[] tabletComputers = new Integer[3];
+    private String[] tabletComputers = new String[3];
     @Column
-    private Integer[] graphicTabletsComputers = new Integer[3];
+    private String[] graphicTabletsComputers = new String[3];
 
     @Column
-    private Integer[] asPartOfLocalComputerNetworks = new Integer[3];
+    private String[] asPartOfLocalComputerNetworks = new String[3];
 
     @Column
-    private Integer[] havingAccessToTheInternet = new Integer[3];
+    private String[] havingAccessToTheInternet = new String[3];
 
     @Column
-    private Integer[] organizationsWithAccessToTheIntranetPortal = new Integer[3];
+    private String[] organizationsWithAccessToTheIntranetPortal = new String[3];
 
     @Column
-    private Integer[] receivedInTheReportingYear = new Integer[3];
+    private String[] receivedInTheReportingYear = new String[3];
 
     @Column
-    private Integer electronicTerminals;
+    private String electronicTerminals;
 
     @Column
-    private Integer electronicTerminalsWithAccessToInternetResources;
+    private String electronicTerminalsWithAccessToInternetResources;
 
     @Column
-    private Integer multimediaProjectors;
+    private String multimediaProjectors;
 
     @Column
-    private Integer interactiveWhiteboards;
+    private String interactiveWhiteboards;
 
     @Column
-    private Integer printers;
+    private String printers;
     @Column
-    private Integer printers3D;
+    private String printers3D;
 
     @Column
-    private Integer scanners;
+    private String scanners;
 
     @Column
-    private Integer multifunctionDevices;
+    private String multifunctionDevices;
 
     public Unit12() {
     }
@@ -66,131 +66,131 @@ public class Unit12 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer[] getPersonalComputersTotal() {
+    public String[] getPersonalComputersTotal() {
         return personalComputersTotal;
     }
 
-    public void setPersonalComputersTotal(Integer[] personalComputersTotal) {
+    public void setPersonalComputersTotal(String[] personalComputersTotal) {
         this.personalComputersTotal = personalComputersTotal;
     }
 
-    public Integer[] getPortablePersonalComputers() {
+    public String[] getPortablePersonalComputers() {
         return portablePersonalComputers;
     }
 
-    public void setPortablePersonalComputers(Integer[] portablePersonalComputers) {
+    public void setPortablePersonalComputers(String[] portablePersonalComputers) {
         this.portablePersonalComputers = portablePersonalComputers;
     }
 
-    public Integer[] getTabletComputers() {
+    public String[] getTabletComputers() {
         return tabletComputers;
     }
 
-    public void setTabletComputers(Integer[] tabletComputers) {
+    public void setTabletComputers(String[] tabletComputers) {
         this.tabletComputers = tabletComputers;
     }
 
-    public Integer[] getGraphicTabletsComputers() {
+    public String[] getGraphicTabletsComputers() {
         return graphicTabletsComputers;
     }
 
-    public void setGraphicTabletsComputers(Integer[] graphicTabletsComputers) {
+    public void setGraphicTabletsComputers(String[] graphicTabletsComputers) {
         this.graphicTabletsComputers = graphicTabletsComputers;
     }
 
-    public Integer[] getAsPartOfLocalComputerNetworks() {
+    public String[] getAsPartOfLocalComputerNetworks() {
         return asPartOfLocalComputerNetworks;
     }
 
-    public void setAsPartOfLocalComputerNetworks(Integer[] asPartOfLocalComputerNetworks) {
+    public void setAsPartOfLocalComputerNetworks(String[] asPartOfLocalComputerNetworks) {
         this.asPartOfLocalComputerNetworks = asPartOfLocalComputerNetworks;
     }
 
-    public Integer[] getHavingAccessToTheInternet() {
+    public String[] getHavingAccessToTheInternet() {
         return havingAccessToTheInternet;
     }
 
-    public void setHavingAccessToTheInternet(Integer[] havingAccessToTheInternet) {
+    public void setHavingAccessToTheInternet(String[] havingAccessToTheInternet) {
         this.havingAccessToTheInternet = havingAccessToTheInternet;
     }
 
-    public Integer[] getOrganizationsWithAccessToTheIntranetPortal() {
+    public String[] getOrganizationsWithAccessToTheIntranetPortal() {
         return organizationsWithAccessToTheIntranetPortal;
     }
 
-    public void setOrganizationsWithAccessToTheIntranetPortal(Integer[] organizationsWithAccessToTheIntranetPortal) {
+    public void setOrganizationsWithAccessToTheIntranetPortal(String[] organizationsWithAccessToTheIntranetPortal) {
         this.organizationsWithAccessToTheIntranetPortal = organizationsWithAccessToTheIntranetPortal;
     }
 
-    public Integer[] getReceivedInTheReportingYear() {
+    public String[] getReceivedInTheReportingYear() {
         return receivedInTheReportingYear;
     }
 
-    public void setReceivedInTheReportingYear(Integer[] receivedInTheReportingYear) {
+    public void setReceivedInTheReportingYear(String[] receivedInTheReportingYear) {
         this.receivedInTheReportingYear = receivedInTheReportingYear;
     }
 
-    public Integer getElectronicTerminals() {
+    public String getElectronicTerminals() {
         return electronicTerminals;
     }
 
-    public void setElectronicTerminals(Integer electronicTerminals) {
+    public void setElectronicTerminals(String electronicTerminals) {
         this.electronicTerminals = electronicTerminals;
     }
 
-    public Integer getElectronicTerminalsWithAccessToInternetResources() {
+    public String getElectronicTerminalsWithAccessToInternetResources() {
         return electronicTerminalsWithAccessToInternetResources;
     }
 
-    public void setElectronicTerminalsWithAccessToInternetResources(Integer electronicTerminalsWithAccessToInternetResources) {
+    public void setElectronicTerminalsWithAccessToInternetResources(String electronicTerminalsWithAccessToInternetResources) {
         this.electronicTerminalsWithAccessToInternetResources = electronicTerminalsWithAccessToInternetResources;
     }
 
-    public Integer getMultimediaProjectors() {
+    public String getMultimediaProjectors() {
         return multimediaProjectors;
     }
 
-    public void setMultimediaProjectors(Integer multimediaProjectors) {
+    public void setMultimediaProjectors(String multimediaProjectors) {
         this.multimediaProjectors = multimediaProjectors;
     }
 
-    public Integer getInteractiveWhiteboards() {
+    public String getInteractiveWhiteboards() {
         return interactiveWhiteboards;
     }
 
-    public void setInteractiveWhiteboards(Integer interactiveWhiteboards) {
+    public void setInteractiveWhiteboards(String interactiveWhiteboards) {
         this.interactiveWhiteboards = interactiveWhiteboards;
     }
 
-    public Integer getPrinters() {
+    public String getPrinters() {
         return printers;
     }
 
-    public void setPrinters(Integer printers) {
+    public void setPrinters(String printers) {
         this.printers = printers;
     }
 
-    public Integer getPrinters3D() {
+    public String getPrinters3D() {
         return printers3D;
     }
 
-    public void setPrinters3D(Integer printers3D) {
+    public void setPrinters3D(String printers3D) {
         this.printers3D = printers3D;
     }
 
-    public Integer getScanners() {
+    public String getScanners() {
         return scanners;
     }
 
-    public void setScanners(Integer scanners) {
+    public void setScanners(String scanners) {
         this.scanners = scanners;
     }
 
-    public Integer getMultifunctionDevices() {
+    public String getMultifunctionDevices() {
         return multifunctionDevices;
     }
 
-    public void setMultifunctionDevices(Integer multifunctionDevices) {
+    public void setMultifunctionDevices(String multifunctionDevices) {
         this.multifunctionDevices = multifunctionDevices;
     }
 }

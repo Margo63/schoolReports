@@ -17,16 +17,6 @@ public class UserController {
     @Autowired
     UserRepository repository;
 
-    @PostMapping("add")
-    void addUser(User user){
-        repository.save(user);
-    }
-
-    @GetMapping("test")
-    String test(String text){
-        return text;
-    }
-
     @GetMapping("getAllUsers")
     List<User> getAllUsers(){
         return (List<User>) repository.findAll();

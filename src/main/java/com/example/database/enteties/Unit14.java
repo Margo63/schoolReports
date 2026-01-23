@@ -12,16 +12,16 @@ public class Unit14 {
     private Long id;
 
     @Column
-    private Integer maximumInternetAccessSpeed;
+    private Byte maximumInternetAccessSpeed;
 
     @Column
-    private Integer maximumSpeedOfFixedWiredInternetAccess;
+    private Byte maximumSpeedOfFixedWiredInternetAccess;
 
     @Column
-    private Integer maximumSpeedOfFixedWirelessInternetAccess;
+    private Byte maximumSpeedOfFixedWirelessInternetAccess;
 
     @Column
-    private Integer maximumSpeedOfMobileInternetAccess;
+    private Byte maximumSpeedOfMobileInternetAccess;
 
     public Unit14() {
     }
@@ -33,35 +33,35 @@ public class Unit14 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer getMaximumInternetAccessSpeed() {
+    public Byte getMaximumInternetAccessSpeed() {
         return maximumInternetAccessSpeed;
     }
 
-    public void setMaximumInternetAccessSpeed(Integer maximumInternetAccessSpeed) {
+    public void setMaximumInternetAccessSpeed(Byte maximumInternetAccessSpeed) {
         this.maximumInternetAccessSpeed = maximumInternetAccessSpeed;
     }
 
-    public Integer getMaximumSpeedOfFixedWiredInternetAccess() {
+    public Byte getMaximumSpeedOfFixedWiredInternetAccess() {
         return maximumSpeedOfFixedWiredInternetAccess;
     }
 
-    public void setMaximumSpeedOfFixedWiredInternetAccess(Integer maximumSpeedOfFixedWiredInternetAccess) {
+    public void setMaximumSpeedOfFixedWiredInternetAccess(Byte maximumSpeedOfFixedWiredInternetAccess) {
         this.maximumSpeedOfFixedWiredInternetAccess = maximumSpeedOfFixedWiredInternetAccess;
     }
 
-    public Integer getMaximumSpeedOfFixedWirelessInternetAccess() {
+    public Byte getMaximumSpeedOfFixedWirelessInternetAccess() {
         return maximumSpeedOfFixedWirelessInternetAccess;
     }
 
-    public void setMaximumSpeedOfFixedWirelessInternetAccess(Integer maximumSpeedOfFixedWirelessInternetAccess) {
+    public void setMaximumSpeedOfFixedWirelessInternetAccess(Byte maximumSpeedOfFixedWirelessInternetAccess) {
         this.maximumSpeedOfFixedWirelessInternetAccess = maximumSpeedOfFixedWirelessInternetAccess;
     }
 
-    public Integer getMaximumSpeedOfMobileInternetAccess() {
+    public Byte getMaximumSpeedOfMobileInternetAccess() {
         return maximumSpeedOfMobileInternetAccess;
     }
 
-    public void setMaximumSpeedOfMobileInternetAccess(Integer maximumSpeedOfMobileInternetAccess) {
+    public void setMaximumSpeedOfMobileInternetAccess(Byte maximumSpeedOfMobileInternetAccess) {
         this.maximumSpeedOfMobileInternetAccess = maximumSpeedOfMobileInternetAccess;
     }
 }

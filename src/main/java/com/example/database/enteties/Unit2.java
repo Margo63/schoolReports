@@ -13,11 +13,11 @@ public class Unit2 {
     private Long id;
 
     @Column
-    private Integer personalizedFinancingOfChildrensAdditionalEducation;
+    private Byte personalizedFinancingOfChildrensAdditionalEducation;
     @Column
-    private Integer newWageSystem;
+    private Byte newWageSystem;
     @Column
-    private Integer theEducationalActivityLicense;
+    private Byte theEducationalActivityLicense;
 
     public Unit2() {
     }
@@ -29,27 +29,27 @@ public class Unit2 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer getPersonalizedFinancingOfChildrensAdditionalEducation() {
+    public Byte getPersonalizedFinancingOfChildrensAdditionalEducation() {
         return personalizedFinancingOfChildrensAdditionalEducation;
     }
 
-    public void setPersonalizedFinancingOfChildrensAdditionalEducation(Integer personalizedFinancingOfChildrensAdditionalEducation) {
+    public void setPersonalizedFinancingOfChildrensAdditionalEducation(Byte personalizedFinancingOfChildrensAdditionalEducation) {
         this.personalizedFinancingOfChildrensAdditionalEducation = personalizedFinancingOfChildrensAdditionalEducation;
     }
 
-    public Integer getNewWageSystem() {
+    public Byte getNewWageSystem() {
         return newWageSystem;
     }
 
-    public void setNewWageSystem(Integer newWageSystem) {
+    public void setNewWageSystem(Byte newWageSystem) {
         this.newWageSystem = newWageSystem;
     }
 
-    public Integer getTheEducationalActivityLicense() {
+    public Byte getTheEducationalActivityLicense() {
         return theEducationalActivityLicense;
     }
 
-    public void setTheEducationalActivityLicense(Integer theEducationalActivityLicense) {
+    public void setTheEducationalActivityLicense(Byte theEducationalActivityLicense) {
         this.theEducationalActivityLicense = theEducationalActivityLicense;
     }
 }

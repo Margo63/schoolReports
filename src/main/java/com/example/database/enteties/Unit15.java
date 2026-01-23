@@ -12,37 +12,37 @@ public class Unit15 {
     private Long id;
 
     @Column
-    private Integer[] theAmountOfFundsReceived = new Integer[5];
+    private String[] theAmountOfFundsReceived = new String[5];
 
     @Column
-    private Integer[] includingFundsBudgetsOfAllLevelsTotal = new Integer[5];
+    private String[] includingFundsBudgetsOfAllLevelsTotal = new String[5];
 
     @Column
-    private Integer[] includingTheBudgetOfFederal = new Integer[5];
+    private String[] includingTheBudgetOfFederal = new String[5];
 
     @Column
-    private Integer[] includingTheBudgetOfTheSubjectOfTheRussiaFederation = new Integer[5];
+    private String[] includingTheBudgetOfTheSubjectOfTheRussiaFederation = new String[5];
 
     @Column
-    private Integer[] localBudget = new Integer[5];
+    private String[] localBudget = new String[5];
 
     @Column
-    private Integer[] organizations = new Integer[5];
+    private String[] organizations = new String[5];
 
     @Column
-    private Integer[] population = new Integer[5];
+    private String[] population = new String[5];
 
     @Column
-    private Integer[] socialFunds = new Integer[5];
+    private String[] socialFunds = new String[5];
 
     @Column
-    private Integer[] foreignSources = new Integer[5];
+    private String[] foreignSources = new String[5];
 
     @Column
-    private Integer balanceBeginning;
+    private String balanceBeginning;
 
     @Column
-    private Integer balanceEnd;
+    private String balanceEnd;
 
     public Unit15() {
     }
@@ -54,91 +54,91 @@ public class Unit15 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer[] getTheAmountOfFundsReceived() {
+    public String[] getTheAmountOfFundsReceived() {
         return theAmountOfFundsReceived;
     }
 
-    public void setTheAmountOfFundsReceived(Integer[] theAmountOfFundsReceived) {
+    public void setTheAmountOfFundsReceived(String[] theAmountOfFundsReceived) {
         this.theAmountOfFundsReceived = theAmountOfFundsReceived;
     }
 
-    public Integer[] getIncludingFundsBudgetsOfAllLevelsTotal() {
+    public String[] getIncludingFundsBudgetsOfAllLevelsTotal() {
         return includingFundsBudgetsOfAllLevelsTotal;
     }
 
-    public void setIncludingFundsBudgetsOfAllLevelsTotal(Integer[] includingFundsBudgetsOfAllLevelsTotal) {
+    public void setIncludingFundsBudgetsOfAllLevelsTotal(String[] includingFundsBudgetsOfAllLevelsTotal) {
         this.includingFundsBudgetsOfAllLevelsTotal = includingFundsBudgetsOfAllLevelsTotal;
     }
 
-    public Integer[] getIncludingTheBudgetOfFederal() {
+    public String[] getIncludingTheBudgetOfFederal() {
         return includingTheBudgetOfFederal;
     }
 
-    public void setIncludingTheBudgetOfFederal(Integer[] includingTheBudgetOfFederal) {
+    public void setIncludingTheBudgetOfFederal(String[] includingTheBudgetOfFederal) {
         this.includingTheBudgetOfFederal = includingTheBudgetOfFederal;
     }
 
-    public Integer[] getIncludingTheBudgetOfTheSubjectOfTheRussiaFederation() {
+    public String[] getIncludingTheBudgetOfTheSubjectOfTheRussiaFederation() {
         return includingTheBudgetOfTheSubjectOfTheRussiaFederation;
     }
 
-    public void setIncludingTheBudgetOfTheSubjectOfTheRussiaFederation(Integer[] includingTheBudgetOfTheSubjectOfTheRussiaFederation) {
+    public void setIncludingTheBudgetOfTheSubjectOfTheRussiaFederation(String[] includingTheBudgetOfTheSubjectOfTheRussiaFederation) {
         this.includingTheBudgetOfTheSubjectOfTheRussiaFederation = includingTheBudgetOfTheSubjectOfTheRussiaFederation;
     }
 
-    public Integer[] getLocalBudget() {
+    public String[] getLocalBudget() {
         return localBudget;
     }
 
-    public void setLocalBudget(Integer[] localBudget) {
+    public void setLocalBudget(String[] localBudget) {
         this.localBudget = localBudget;
     }
 
-    public Integer[] getOrganizations() {
+    public String[] getOrganizations() {
         return organizations;
     }
 
-    public void setOrganizations(Integer[] organizations) {
+    public void setOrganizations(String[] organizations) {
         this.organizations = organizations;
     }
 
-    public Integer[] getPopulation() {
+    public String[] getPopulation() {
         return population;
     }
 
-    public void setPopulation(Integer[] population) {
+    public void setPopulation(String[] population) {
         this.population = population;
     }
 
-    public Integer[] getSocialFunds() {
+    public String[] getSocialFunds() {
         return socialFunds;
     }
 
-    public void setSocialFunds(Integer[] socialFunds) {
+    public void setSocialFunds(String[] socialFunds) {
         this.socialFunds = socialFunds;
     }
 
-    public Integer[] getForeignSources() {
+    public String[] getForeignSources() {
         return foreignSources;
     }
 
-    public void setForeignSources(Integer[] foreignSources) {
+    public void setForeignSources(String[] foreignSources) {
         this.foreignSources = foreignSources;
     }
 
-    public Integer getBalanceBeginning() {
+    public String getBalanceBeginning() {
         return balanceBeginning;
     }
 
-    public void setBalanceBeginning(Integer balanceBeginning) {
+    public void setBalanceBeginning(String balanceBeginning) {
         this.balanceBeginning = balanceBeginning;
     }
 
-    public Integer getBalanceEnd() {
+    public String getBalanceEnd() {
         return balanceEnd;
     }
 
-    public void setBalanceEnd(Integer balanceEnd) {
+    public void setBalanceEnd(String balanceEnd) {
         this.balanceEnd = balanceEnd;
     }
 }

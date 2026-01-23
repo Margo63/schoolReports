@@ -14,16 +14,16 @@ public class Unit13 {
     private Long id;
 
     @Column
-    private Integer availabilityOfFixedTelephoneService;
+    private Byte availabilityOfFixedTelephoneService;
 
     @Column
-    private Integer emailAddress;
+    private Byte emailAddress;
 
     @Column
-    private Integer websiteOnTheInternet;
+    private Byte websiteOnTheInternet;
 
     @Column
-    private Integer availabilityOfInformationOnTheWebsiteAboutOrganization;
+    private Byte availabilityOfInformationOnTheWebsiteAboutOrganization;
 
     public Unit13() {
     }
@@ -35,35 +35,35 @@ public class Unit13 {
     public void setId(Long id) {
         this.id = id;
     }
-    public Integer getAvailabilityOfFixedTelephoneService() {
+    public Byte getAvailabilityOfFixedTelephoneService() {
         return availabilityOfFixedTelephoneService;
     }
 
-    public void setAvailabilityOfFixedTelephoneService(Integer availabilityOfFixedTelephoneService) {
+    public void setAvailabilityOfFixedTelephoneService(Byte availabilityOfFixedTelephoneService) {
         this.availabilityOfFixedTelephoneService = availabilityOfFixedTelephoneService;
     }
 
-    public Integer getEmailAddress() {
+    public Byte getEmailAddress() {
         return emailAddress;
     }
 
-    public void setEmailAddress(Integer emailAddress) {
+    public void setEmailAddress(Byte emailAddress) {
         this.emailAddress = emailAddress;
     }
 
-    public Integer getWebsiteOnTheInternet() {
+    public Byte getWebsiteOnTheInternet() {
         return websiteOnTheInternet;
     }
 
-    public void setWebsiteOnTheInternet(Integer websiteOnTheInternet) {
+    public void setWebsiteOnTheInternet(Byte websiteOnTheInternet) {
         this.websiteOnTheInternet = websiteOnTheInternet;
     }
 
-    public Integer getAvailabilityOfInformationOnTheWebsiteAboutOrganization() {
+    public Byte getAvailabilityOfInformationOnTheWebsiteAboutOrganization() {
         return availabilityOfInformationOnTheWebsiteAboutOrganization;
     }
 
-    public void setAvailabilityOfInformationOnTheWebsiteAboutOrganization(Integer availabilityOfInformationOnTheWebsiteAboutOrganization) {
+    public void setAvailabilityOfInformationOnTheWebsiteAboutOrganization(Byte availabilityOfInformationOnTheWebsiteAboutOrganization) {
         this.availabilityOfInformationOnTheWebsiteAboutOrganization = availabilityOfInformationOnTheWebsiteAboutOrganization;
     }
 }

@@ -13,124 +13,124 @@ public class Unit10 {
     private Long id;
 
     @Column
-    private Integer assemblyHallInOrganization;
+    private Byte assemblyHallInOrganization;
 
     @Column
-    private Integer assemblyHallThirdPartyOrganization;
+    private Byte assemblyHallThirdPartyOrganization;
 
     @Column
-    private Integer concertHallInOrganization;
+    private Byte concertHallInOrganization;
 
     @Column
-    private Integer concertHallThirdPartyOrganization;
+    private Byte concertHallThirdPartyOrganization;
 
     @Column
-    private Integer gameRoomInOrganization;
+    private Byte gameRoomInOrganization;
 
     @Column
-    private Integer gameRoomThirdPartyOrganization;
+    private Byte gameRoomThirdPartyOrganization;
 
     @Column
-    private Integer trainingClassInOrganization;
+    private Byte trainingClassInOrganization;
 
     @Column
-    private Integer trainingClassThirdPartyOrganization;
+    private Byte trainingClassThirdPartyOrganization;
 
     @Column
-    private Integer laboratoryInOrganization;
+    private Byte laboratoryInOrganization;
 
     @Column
-    private Integer laboratoryThirdPartyOrganization;
+    private Byte laboratoryThirdPartyOrganization;
 
     @Column
-    private Integer workshopInOrganization;
+    private Byte workshopInOrganization;
 
     @Column
-    private Integer workshopThirdPartyOrganization;
+    private Byte workshopThirdPartyOrganization;
 
     @Column
-    private Integer choreographyClassesInOrganization;
+    private Byte choreographyClassesInOrganization;
 
     @Column
-    private Integer choreographyClassesThirdPartyOrganization;
+    private Byte choreographyClassesThirdPartyOrganization;
 
     @Column
-    private Integer choreographyClassesWithShowerInOrganization;
+    private Byte choreographyClassesWithShowerInOrganization;
 
     @Column
-    private Integer choreographyClassesWithShowerThirdPartyOrganization;
+    private Byte choreographyClassesWithShowerThirdPartyOrganization;
 
     @Column
-    private Integer gymInOrganization;
+    private Byte gymInOrganization;
 
     @Column
-    private Integer gymThirdPartyOrganization;
+    private Byte gymThirdPartyOrganization;
 
     @Column
-    private Integer gymWithShowerInOrganization;
+    private Byte gymWithShowerInOrganization;
 
     @Column
-    private Integer gymWithShowerThirdPartyOrganization;
+    private Byte gymWithShowerThirdPartyOrganization;
 
     @Column
-    private Integer indoorSwimmingPoolInOrganization;
+    private Byte indoorSwimmingPoolInOrganization;
 
     @Column
-    private Integer indoorSwimmingPoolThirdPartyOrganization;
+    private Byte indoorSwimmingPoolThirdPartyOrganization;
 
     @Column
-    private Integer lectureHallInOrganization;
+    private Byte lectureHallInOrganization;
 
     @Column
-    private Integer lectureHallThirdPartyOrganization;
+    private Byte lectureHallThirdPartyOrganization;
 
     @Column
-    private Integer computerRoomInOrganization;
+    private Byte computerRoomInOrganization;
 
     @Column
-    private Integer computerRoomThirdPartyOrganization;
+    private Byte computerRoomThirdPartyOrganization;
 
     @Column
-    private Integer medicalCenterInOrganization;
+    private Byte medicalCenterInOrganization;
 
     @Column
-    private Integer medicalCenterThirdPartyOrganization;
+    private Byte medicalCenterThirdPartyOrganization;
 
     @Column
-    private Integer diningRoomInOrganization;
+    private Byte diningRoomInOrganization;
 
     @Column
-    private Integer diningRoomThirdPartyOrganization;
+    private Byte diningRoomThirdPartyOrganization;
 
     @Column
-    private Integer museumInOrganization;
+    private Byte museumInOrganization;
 
     @Column
-    private Integer museumThirdPartyOrganization;
+    private Byte museumThirdPartyOrganization;
 
     @Column
-    private Integer wildlifeCornerInOrganization;
+    private Byte wildlifeCornerInOrganization;
 
     @Column
-    private Integer wildlifeCornerThirdPartyOrganization;
+    private Byte wildlifeCornerThirdPartyOrganization;
 
     @Column
-    private Integer climbingWallInOrganization;
+    private Byte climbingWallInOrganization;
 
     @Column
-    private Integer climbingWallThirdPartyOrganization;
+    private Byte climbingWallThirdPartyOrganization;
 
     @Column
-    private Integer touristBaseInOrganization;
+    private Byte touristBaseInOrganization;
 
     @Column
-    private Integer touristBaseThirdPartyOrganization;
+    private Byte touristBaseThirdPartyOrganization;
 
     @Column
-    private Integer libraryInOrganization;
+    private Byte libraryInOrganization;
 
     @Column
-    private Integer libraryThirdPartyOrganization;
+    private Byte libraryThirdPartyOrganization;
 
     public Unit10() {
     }
@@ -142,323 +142,323 @@ public class Unit10 {
         this.id = id;
     }
 
-    public Integer getAssemblyHallInOrganization() {
+    public Byte getAssemblyHallInOrganization() {
         return assemblyHallInOrganization;
     }
 
-    public void setAssemblyHallInOrganization(Integer assemblyHallInOrganization) {
+    public void setAssemblyHallInOrganization(Byte assemblyHallInOrganization) {
         this.assemblyHallInOrganization = assemblyHallInOrganization;
     }
 
-    public Integer getAssemblyHallThirdPartyOrganization() {
+    public Byte getAssemblyHallThirdPartyOrganization() {
         return assemblyHallThirdPartyOrganization;
     }
 
-    public void setAssemblyHallThirdPartyOrganization(Integer assemblyHallThirdPartyOrganization) {
+    public void setAssemblyHallThirdPartyOrganization(Byte assemblyHallThirdPartyOrganization) {
         this.assemblyHallThirdPartyOrganization = assemblyHallThirdPartyOrganization;
     }
 
-    public Integer getConcertHallInOrganization() {
+    public Byte getConcertHallInOrganization() {
         return concertHallInOrganization;
     }
 
-    public void setConcertHallInOrganization(Integer concertHallInOrganization) {
+    public void setConcertHallInOrganization(Byte concertHallInOrganization) {
         this.concertHallInOrganization = concertHallInOrganization;
     }
 
-    public Integer getConcertHallThirdPartyOrganization() {
+    public Byte getConcertHallThirdPartyOrganization() {
         return concertHallThirdPartyOrganization;
     }
 
-    public void setConcertHallThirdPartyOrganization(Integer concertHallThirdPartyOrganization) {
+    public void setConcertHallThirdPartyOrganization(Byte concertHallThirdPartyOrganization) {
         this.concertHallThirdPartyOrganization = concertHallThirdPartyOrganization;
     }
 
-    public Integer getGameRoomInOrganization() {
+    public Byte getGameRoomInOrganization() {
         return gameRoomInOrganization;
     }
 
-    public void setGameRoomInOrganization(Integer gameRoomInOrganization) {
+    public void setGameRoomInOrganization(Byte gameRoomInOrganization) {
         this.gameRoomInOrganization = gameRoomInOrganization;
     }
 
-    public Integer getGameRoomThirdPartyOrganization() {
+    public Byte getGameRoomThirdPartyOrganization() {
         return gameRoomThirdPartyOrganization;
     }
 
-    public void setGameRoomThirdPartyOrganization(Integer gameRoomThirdPartyOrganization) {
+    public void setGameRoomThirdPartyOrganization(Byte gameRoomThirdPartyOrganization) {
         this.gameRoomThirdPartyOrganization = gameRoomThirdPartyOrganization;
     }
 
-    public Integer getTrainingClassInOrganization() {
+    public Byte getTrainingClassInOrganization() {
         return trainingClassInOrganization;
     }
 
-    public void setTrainingClassInOrganization(Integer trainingClassInOrganization) {
+    public void setTrainingClassInOrganization(Byte trainingClassInOrganization) {
         this.trainingClassInOrganization = trainingClassInOrganization;
     }
 
-    public Integer getTrainingClassThirdPartyOrganization() {
+    public Byte getTrainingClassThirdPartyOrganization() {
         return trainingClassThirdPartyOrganization;
     }
 
-    public void setTrainingClassThirdPartyOrganization(Integer trainingClassThirdPartyOrganization) {
+    public void setTrainingClassThirdPartyOrganization(Byte trainingClassThirdPartyOrganization) {
         this.trainingClassThirdPartyOrganization = trainingClassThirdPartyOrganization;
     }
 
-    public Integer getLaboratoryInOrganization() {
+    public Byte getLaboratoryInOrganization() {
         return laboratoryInOrganization;
     }
 
-    public void setLaboratoryInOrganization(Integer laboratoryInOrganization) {
+    public void setLaboratoryInOrganization(Byte laboratoryInOrganization) {
         this.laboratoryInOrganization = laboratoryInOrganization;
     }
 
-    public Integer getLaboratoryThirdPartyOrganization() {
+    public Byte getLaboratoryThirdPartyOrganization() {
         return laboratoryThirdPartyOrganization;
     }
 
-    public void setLaboratoryThirdPartyOrganization(Integer laboratoryThirdPartyOrganization) {
+    public void setLaboratoryThirdPartyOrganization(Byte laboratoryThirdPartyOrganization) {
         this.laboratoryThirdPartyOrganization = laboratoryThirdPartyOrganization;
     }
 
-    public Integer getWorkshopInOrganization() {
+    public Byte getWorkshopInOrganization() {
         return workshopInOrganization;
     }
 
-    public void setWorkshopInOrganization(Integer workshopInOrganization) {
+    public void setWorkshopInOrganization(Byte workshopInOrganization) {
         this.workshopInOrganization = workshopInOrganization;
     }
 
-    public Integer getWorkshopThirdPartyOrganization() {
+    public Byte getWorkshopThirdPartyOrganization() {
         return workshopThirdPartyOrganization;
     }
 
-    public void setWorkshopThirdPartyOrganization(Integer workshopThirdPartyOrganization) {
+    public void setWorkshopThirdPartyOrganization(Byte workshopThirdPartyOrganization) {
         this.workshopThirdPartyOrganization = workshopThirdPartyOrganization;
     }
 
-    public Integer getChoreographyClassesInOrganization() {
+    public Byte getChoreographyClassesInOrganization() {
         return choreographyClassesInOrganization;
     }
 
-    public void setChoreographyClassesInOrganization(Integer choreographyClassesInOrganization) {
+    public void setChoreographyClassesInOrganization(Byte choreographyClassesInOrganization) {
         this.choreographyClassesInOrganization = choreographyClassesInOrganization;
     }
 
-    public Integer getChoreographyClassesThirdPartyOrganization() {
+    public Byte getChoreographyClassesThirdPartyOrganization() {
         return choreographyClassesThirdPartyOrganization;
     }
 
-    public void setChoreographyClassesThirdPartyOrganization(Integer choreographyClassesThirdPartyOrganization) {
+    public void setChoreographyClassesThirdPartyOrganization(Byte choreographyClassesThirdPartyOrganization) {
         this.choreographyClassesThirdPartyOrganization = choreographyClassesThirdPartyOrganization;
     }
 
-    public Integer getChoreographyClassesWithShowerInOrganization() {
+    public Byte getChoreographyClassesWithShowerInOrganization() {
         return choreographyClassesWithShowerInOrganization;
     }
 
-    public void setChoreographyClassesWithShowerInOrganization(Integer choreographyClassesWithShowerInOrganization) {
+    public void setChoreographyClassesWithShowerInOrganization(Byte choreographyClassesWithShowerInOrganization) {
         this.choreographyClassesWithShowerInOrganization = choreographyClassesWithShowerInOrganization;
     }
 
-    public Integer getChoreographyClassesWithShowerThirdPartyOrganization() {
+    public Byte getChoreographyClassesWithShowerThirdPartyOrganization() {
         return choreographyClassesWithShowerThirdPartyOrganization;
     }
 
-    public void setChoreographyClassesWithShowerThirdPartyOrganization(Integer choreographyClassesWithShowerThirdPartyOrganization) {
+    public void setChoreographyClassesWithShowerThirdPartyOrganization(Byte choreographyClassesWithShowerThirdPartyOrganization) {
         this.choreographyClassesWithShowerThirdPartyOrganization = choreographyClassesWithShowerThirdPartyOrganization;
     }
 
-    public Integer getGymInOrganization() {
+    public Byte getGymInOrganization() {
         return gymInOrganization;
     }
 
-    public void setGymInOrganization(Integer gymInOrganization) {
+    public void setGymInOrganization(Byte gymInOrganization) {
         this.gymInOrganization = gymInOrganization;
     }
 
-    public Integer getGymThirdPartyOrganization() {
+    public Byte getGymThirdPartyOrganization() {
         return gymThirdPartyOrganization;
     }
 
-    public void setGymThirdPartyOrganization(Integer gymThirdPartyOrganization) {
+    public void setGymThirdPartyOrganization(Byte gymThirdPartyOrganization) {
         this.gymThirdPartyOrganization = gymThirdPartyOrganization;
     }
 
-    public Integer getGymWithShowerInOrganization() {
+    public Byte getGymWithShowerInOrganization() {
         return gymWithShowerInOrganization;
     }
 
-    public void setGymWithShowerInOrganization(Integer gymWithShowerInOrganization) {
+    public void setGymWithShowerInOrganization(Byte gymWithShowerInOrganization) {
         this.gymWithShowerInOrganization = gymWithShowerInOrganization;
     }
 
-    public Integer getGymWithShowerThirdPartyOrganization() {
+    public Byte getGymWithShowerThirdPartyOrganization() {
         return gymWithShowerThirdPartyOrganization;
     }
 
-    public void setGymWithShowerThirdPartyOrganization(Integer gymWithShowerThirdPartyOrganization) {
+    public void setGymWithShowerThirdPartyOrganization(Byte gymWithShowerThirdPartyOrganization) {
         this.gymWithShowerThirdPartyOrganization = gymWithShowerThirdPartyOrganization;
     }
 
-    public Integer getIndoorSwimmingPoolInOrganization() {
+    public Byte getIndoorSwimmingPoolInOrganization() {
         return indoorSwimmingPoolInOrganization;
     }
 
-    public void setIndoorSwimmingPoolInOrganization(Integer indoorSwimmingPoolInOrganization) {
+    public void setIndoorSwimmingPoolInOrganization(Byte indoorSwimmingPoolInOrganization) {
         this.indoorSwimmingPoolInOrganization = indoorSwimmingPoolInOrganization;
     }
 
-    public Integer getIndoorSwimmingPoolThirdPartyOrganization() {
+    public Byte getIndoorSwimmingPoolThirdPartyOrganization() {
         return indoorSwimmingPoolThirdPartyOrganization;
     }
 
-    public void setIndoorSwimmingPoolThirdPartyOrganization(Integer indoorSwimmingPoolThirdPartyOrganization) {
+    public void setIndoorSwimmingPoolThirdPartyOrganization(Byte indoorSwimmingPoolThirdPartyOrganization) {
         this.indoorSwimmingPoolThirdPartyOrganization = indoorSwimmingPoolThirdPartyOrganization;
     }
 
-    public Integer getLectureHallInOrganization() {
+    public Byte getLectureHallInOrganization() {
         return lectureHallInOrganization;
     }
 
-    public void setLectureHallInOrganization(Integer lectureHallInOrganization) {
+    public void setLectureHallInOrganization(Byte lectureHallInOrganization) {
         this.lectureHallInOrganization = lectureHallInOrganization;
     }
 
-    public Integer getLectureHallThirdPartyOrganization() {
+    public Byte getLectureHallThirdPartyOrganization() {
         return lectureHallThirdPartyOrganization;
     }
 
-    public void setLectureHallThirdPartyOrganization(Integer lectureHallThirdPartyOrganization) {
+    public void setLectureHallThirdPartyOrganization(Byte lectureHallThirdPartyOrganization) {
         this.lectureHallThirdPartyOrganization = lectureHallThirdPartyOrganization;
     }
 
-    public Integer getComputerRoomInOrganization() {
+    public Byte getComputerRoomInOrganization() {
         return computerRoomInOrganization;
     }
 
-    public void setComputerRoomInOrganization(Integer computerRoomInOrganization) {
+    public void setComputerRoomInOrganization(Byte computerRoomInOrganization) {
         this.computerRoomInOrganization = computerRoomInOrganization;
     }
 
-    public Integer getComputerRoomThirdPartyOrganization() {
+    public Byte getComputerRoomThirdPartyOrganization() {
         return computerRoomThirdPartyOrganization;
     }
 
-    public void setComputerRoomThirdPartyOrganization(Integer computerRoomThirdPartyOrganization) {
+    public void setComputerRoomThirdPartyOrganization(Byte computerRoomThirdPartyOrganization) {
         this.computerRoomThirdPartyOrganization = computerRoomThirdPartyOrganization;
     }
 
-    public Integer getMedicalCenterInOrganization() {
+    public Byte getMedicalCenterInOrganization() {
         return medicalCenterInOrganization;
     }
 
-    public void setMedicalCenterInOrganization(Integer medicalCenterInOrganization) {
+    public void setMedicalCenterInOrganization(Byte medicalCenterInOrganization) {
         this.medicalCenterInOrganization = medicalCenterInOrganization;
     }
 
-    public Integer getMedicalCenterThirdPartyOrganization() {
+    public Byte getMedicalCenterThirdPartyOrganization() {
         return medicalCenterThirdPartyOrganization;
     }
 
-    public void setMedicalCenterThirdPartyOrganization(Integer medicalCenterThirdPartyOrganization) {
+    public void setMedicalCenterThirdPartyOrganization(Byte medicalCenterThirdPartyOrganization) {
         this.medicalCenterThirdPartyOrganization = medicalCenterThirdPartyOrganization;
     }
 
-    public Integer getDiningRoomInOrganization() {
+    public Byte getDiningRoomInOrganization() {
         return diningRoomInOrganization;
     }
 
-    public void setDiningRoomInOrganization(Integer diningRoomInOrganization) {
+    public void setDiningRoomInOrganization(Byte diningRoomInOrganization) {
         this.diningRoomInOrganization = diningRoomInOrganization;
     }
 
-    public Integer getDiningRoomThirdPartyOrganization() {
+    public Byte getDiningRoomThirdPartyOrganization() {
         return diningRoomThirdPartyOrganization;
     }
 
-    public void setDiningRoomThirdPartyOrganization(Integer diningRoomThirdPartyOrganization) {
+    public void setDiningRoomThirdPartyOrganization(Byte diningRoomThirdPartyOrganization) {
         this.diningRoomThirdPartyOrganization = diningRoomThirdPartyOrganization;
     }
 
-    public Integer getMuseumInOrganization() {
+    public Byte getMuseumInOrganization() {
         return museumInOrganization;
     }
 
-    public void setMuseumInOrganization(Integer museumInOrganization) {
+    public void setMuseumInOrganization(Byte museumInOrganization) {
         this.museumInOrganization = museumInOrganization;
     }
 
-    public Integer getMuseumThirdPartyOrganization() {
+    public Byte getMuseumThirdPartyOrganization() {
         return museumThirdPartyOrganization;
     }
 
-    public void setMuseumThirdPartyOrganization(Integer museumThirdPartyOrganization) {
+    public void setMuseumThirdPartyOrganization(Byte museumThirdPartyOrganization) {
         this.museumThirdPartyOrganization = museumThirdPartyOrganization;
     }
 
-    public Integer getWildlifeCornerInOrganization() {
+    public Byte getWildlifeCornerInOrganization() {
         return wildlifeCornerInOrganization;
     }
 
-    public void setWildlifeCornerInOrganization(Integer wildlifeCornerInOrganization) {
+    public void setWildlifeCornerInOrganization(Byte wildlifeCornerInOrganization) {
         this.wildlifeCornerInOrganization = wildlifeCornerInOrganization;
     }
 
-    public Integer getWildlifeCornerThirdPartyOrganization() {
+    public Byte getWildlifeCornerThirdPartyOrganization() {
         return wildlifeCornerThirdPartyOrganization;
     }
 
-    public void setWildlifeCornerThirdPartyOrganization(Integer wildlifeCornerThirdPartyOrganization) {
+    public void setWildlifeCornerThirdPartyOrganization(Byte wildlifeCornerThirdPartyOrganization) {
         this.wildlifeCornerThirdPartyOrganization = wildlifeCornerThirdPartyOrganization;
     }
 
-    public Integer getClimbingWallInOrganization() {
+    public Byte getClimbingWallInOrganization() {
         return climbingWallInOrganization;
     }
 
-    public void setClimbingWallInOrganization(Integer climbingWallInOrganization) {
+    public void setClimbingWallInOrganization(Byte climbingWallInOrganization) {
         this.climbingWallInOrganization = climbingWallInOrganization;
     }
 
-    public Integer getClimbingWallThirdPartyOrganization() {
+    public Byte getClimbingWallThirdPartyOrganization() {
         return climbingWallThirdPartyOrganization;
     }
 
-    public void setClimbingWallThirdPartyOrganization(Integer climbingWallThirdPartyOrganization) {
+    public void setClimbingWallThirdPartyOrganization(Byte climbingWallThirdPartyOrganization) {
         this.climbingWallThirdPartyOrganization = climbingWallThirdPartyOrganization;
     }
 
-    public Integer getTouristBaseInOrganization() {
+    public Byte getTouristBaseInOrganization() {
         return touristBaseInOrganization;
     }
 
-    public void setTouristBaseInOrganization(Integer touristBaseInOrganization) {
+    public void setTouristBaseInOrganization(Byte touristBaseInOrganization) {
         this.touristBaseInOrganization = touristBaseInOrganization;
     }
 
-    public Integer getTouristBaseThirdPartyOrganization() {
+    public Byte getTouristBaseThirdPartyOrganization() {
         return touristBaseThirdPartyOrganization;
     }
 
-    public void setTouristBaseThirdPartyOrganization(Integer touristBaseThirdPartyOrganization) {
+    public void setTouristBaseThirdPartyOrganization(Byte touristBaseThirdPartyOrganization) {
         this.touristBaseThirdPartyOrganization = touristBaseThirdPartyOrganization;
     }
 
-    public Integer getLibraryInOrganization() {
+    public Byte getLibraryInOrganization() {
         return libraryInOrganization;
     }
 
-    public void setLibraryInOrganization(Integer libraryInOrganization) {
+    public void setLibraryInOrganization(Byte libraryInOrganization) {
         this.libraryInOrganization = libraryInOrganization;
     }
 
-    public Integer getLibraryThirdPartyOrganization() {
+    public Byte getLibraryThirdPartyOrganization() {
         return libraryThirdPartyOrganization;
     }
 
-    public void setLibraryThirdPartyOrganization(Integer libraryThirdPartyOrganization) {
+    public void setLibraryThirdPartyOrganization(Byte libraryThirdPartyOrganization) {
         this.libraryThirdPartyOrganization = libraryThirdPartyOrganization;
     }
 }

@@ -2,8 +2,11 @@ package com.example.database.controllers;
 
 
 import com.example.database.dto.ReferenceResponse;
+import com.example.database.dto.Unit1Response;
+import com.example.database.dto.Unit3Response;
 import com.example.database.enteties.*;
 import com.example.database.repositories.*;
+import com.example.database.service.Unit3Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -28,7 +31,7 @@ public class UnitController {
     Unit2Repository unit2Repository;
 
     @Autowired
-    Unit3Repository unit3Repository;
+    Unit3Service unit3Service;
 
     @Autowired
     Unit4Repository unit4Repository;
@@ -79,7 +82,7 @@ public class UnitController {
 
         unit1Repository.save(new Unit1(mainInfo.getId()));
         unit2Repository.save(new Unit2(mainInfo.getId()));
-        unit3Repository.save(new Unit3(mainInfo.getId()));
+        unit3Service.save(new Unit3(mainInfo.getId()));
         unit4Repository.save(new Unit4(mainInfo.getId()));
         unit5Repository.save(new Unit5(mainInfo.getId()));
         unit6Repository.save(new Unit6(mainInfo.getId()));
@@ -98,9 +101,18 @@ public class UnitController {
         return ResponseEntity.ok(new ReferenceResponse(mainInfo.getId()));
     }
 
+    @GetMapping("getReportUnit1")
+    ResponseEntity<Unit1Response> getReportUnit1(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit1Repository.countByOrganizationName(organizationName));
+    }
+
+    @GetMapping("getReportUnit3")
+    ResponseEntity<Unit3Response> getReportUnit3(@RequestParam String organizationName) {
+        return ResponseEntity.ok(unit3Service.getSummary(organizationName));
+    }
+
     @GetMapping("getMainInfoList")
-    ResponseEntity<Page<MainInfo>> getMainInfo(
-            @PageableDefault(page = 0, size = 5) Pageable pageable) {
+    ResponseEntity<Page<MainInfo>> getMainInfo(@PageableDefault(page = 0, size = 5) Pageable pageable) {
         Page<MainInfo> result = mainInfoRepository.findAllProjected(pageable);
         if (result.isEmpty()) {
             return ResponseEntity.noContent().build();
@@ -130,7 +142,7 @@ public class UnitController {
 
     @GetMapping("getUnit3")
     ResponseEntity<Unit3> getUnit3ById(Long id) {
-        return ResponseEntity.ok(unit3Repository.findById(id).get());
+        return ResponseEntity.ok(unit3Service.findById(id));
     }
 
     @GetMapping("getUnit4")
@@ -236,7 +248,7 @@ public class UnitController {
     @PutMapping("updateUnit3")
     ResponseEntity<String> updateUnit3(@RequestBody Unit3 unit3) {
 
-        unit3Repository.save(unit3);
+        unit3Service.save(unit3);
         return ResponseEntity.ok("Updated");
     }
 
